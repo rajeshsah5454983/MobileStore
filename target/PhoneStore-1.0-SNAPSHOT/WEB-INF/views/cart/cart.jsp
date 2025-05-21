@@ -46,9 +46,9 @@
                                     <div class="cart-item-quantity">
                                         <form action="${pageContext.request.contextPath}/cart/update" method="post">
                                             <input type="hidden" name="cartItemId" value="${item.id}">
-                                            <input type="button" class="quantity-minus">-</input>
+                                            <button type="button" class="quantity-minus">-</button>
                                             <input type="number" name="quantity" class="quantity-input" value="${item.quantity}" min="1" max="${item.product.stock}" data-cart-item-id="${item.id}" required>
-                                            <input type="button" class="quantity-plus">+</input>
+                                            <button type="button" class="quantity-plus">+</button>
                                             <button type="submit" class="btn btn-sm">Update</button>
                                         </form>
                                     </div>
